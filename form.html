@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="en"><head>  
+<meta charset="utf-8">  
+<title>JavaScript Form Validation using a sample registration form</title>  
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />  
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />  
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />  
+<script src="sample.js"></script>  
+</head>  
+<body onload="document.registration.userid.focus();">  
+<h1>Registration Form</h1>  
+<p><b> All fields are required </b></p>  
+<form name='registration' onSubmit="return formValidation();">  
+<ul>  
+<li><b><label for="userid">User id:</label></li></b>  
+<input type="text" name="userid" size="12" /><br></br>
+<li><b><label for="passid">Password:</label></li></b>  
+<input type="password" name="passid" size="12" /><br></br>  
+<li><b><label for="username">Name:</label></li></b>  
+<input type="text" name="username" size="50" /><br></br>  
+<li><b><label for="address">Address:</label></li></b>  
+<input type="text" name="address" size="50" /><br></br>  
+<li><b><label for="country">Country:</label></li> </b> 
+<select name="country"> 
+<option selected="" value="Default">(Please select a country)</option>  
+<option value="AF">Australia</option>  
+<option value="AL">Canada</option>  
+<option value="DZ">India</option>  
+<option value="AS">Russia</option>  
+<option value="AD">USA</option>  
+</select><br></br>
+<li><b><label for="zip">ZIP Code:</label></li></b>  
+<input type="text" name="zip" /><br></br>  
+<li><b><label for="email">Email:</label></li></b>  
+<input type="text" name="email" size="50" /><br></br>  
+<li><b><label id="gender">Sex:</label></li></b>
+<input type="radio" name="msex" value="Male" /><span>Male</span>
+<input type="radio" name="fsex" value="Female" /><span>Female</span> <br></br>
+<li><b><label>Language:</label></li></b>
+<input type="checkbox" name="en" value="en" checked /><span>English</span>
+<input type="checkbox" name="nonen" value="noen" /><span>Non English</span><br></br>
+<li><b><label for="desc">About:</label></li></b>  
+<textarea name="desc" id="desc"></textarea><br></br>  
+<li><input type="submit" name="submit" value="Submit" /></li>  
+</ul>  
+</form>  
+</body>  
+</html>  
